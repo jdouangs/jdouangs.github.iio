@@ -1,53 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
-    <title></title>
+  <meta charset="UTF-8">
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
-<style type="text/css">
-    body{
-        background-color: rosybrown;
-        height:500px;
-        width:500px;
-    }  
-    .header{
-        color: red;
-        font-size:30px;
-        font-weight:bold;
-    }
-    #id {
-        color: blue;
-        font-size: 50px;
-        font-style: italic;
-    }  
-</style>
 <body>
-    <h1 style="text-align:center;">Jason</h1>
-    <img src="https://images.unsplash.com/photo-1531398011580-18723836b963?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=82de8dcb120a09088ea2b0711db1804d&auto=format&fit=crop&w=750&q=80" alt="This is the text" style="width:500px;height:600px"/>
+    <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="https://jdouangs.github.io/index.html">Lattitude</a>
+                </div>
+    
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="https://jdouangs.github.io/cloudiness.html">Cloudiness</a></li>
+                            <li><a href="https://jdouangs.github.io/humidity.html">Humidity</a></li>
+                            <li><a href="https://jdouangs.github.io/temperature.html">Temperature</a></li>
+                            <li><a href="https://jdouangs.github.io/windspeed.html">Wind Speed</a></li>
+                        </ul>
+                        </li>
+                        <li><a href="https://jdouangs.github.io/comparison.html">Comparison</a></li>
+                        <li><a href="https://jdouangs.github.io/data.html">Data</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-    <ul>
-        <li>Email:</li> <a href="mailto:jason.douang@gmail.com">jason.douang@gmail.com</a></li>
-        <li>Twitter <a href="#"> twitter</a></li>
-    </ul>
-    <p>Write a short paragraph about yourself as a placeholder text.</p>
 
-    <table>
-        <tr>
-            <th>Books</th>
-            <th>Movies</th>
-            <th>Games</th>
-        </tr>
-        <tr>
-            <td>1st Books</td>
-            <td>1st Movie</td>
-            <td>1st Game</td>
-        </tr>
-    </table>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                <div class="box">
+                <h1 class="title">Summary: Latitude vs. X</h1>
+                <hr>
+                    <img src="https://jdouangs.github.io/images/Fig1.png" alt="..." height="200" width="250" align="left" style="border: 2px solid #42cbf4; margin: 5px" >
+                    
+                        <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis
+                            , we first pulled the data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
+                            <br>
+                            <br>
+                            After assumbleing the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included:
+                            temperature, cloudiness, wind speed, and humidity. This sit provides the source data and visualizations created as part of the analysis,
+                            as well as explanations and descriptions of any trends and correlations witnessed.
+
+                        </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="box">
+                    <h1 class="title">Visualizations</h1>
+                    <hr>
+                        <a href="https://jdouangs.github.io/cloudiness.html"><img class="vishome" src="https://jdouangs.github.io/images/Fig1.png" alt="..." style="width:200px;"></a>
+                        <a href="https://jdouangs.github.io/humidity.html"><img class="vishome" src="https://jdouangs.github.io/images/Fig2.png" alt="..." style="width:200px;"></a>
+                        <a href="https://jdouangs.github.io/temperature.html"><img class="vishome" src="https://jdouangs.github.io/images/Fig3.png" alt="..." style="width:200px;"></a>
+                        <a href="https://jdouangs.github.io/windspeed.html"><img class="vishome" src="https://jdouangs.github.io/images/Fig4.png" alt="..." style="width:200px;"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
+<script src="js/bootstrap.min.js"></script>
+
+<script src="js/ie10-viewport-bug-workaround.js"></script>
+
 </body>
+
 </html>
